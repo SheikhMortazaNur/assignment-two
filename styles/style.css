@@ -68,7 +68,7 @@ CONTACT BOX */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 1px 0px 40px rgb(0 0 0 /50%);
+;
 }
 .contact-img img{
     width: 300px;
@@ -85,8 +85,8 @@ CONTACT BOX */
     width: 300px;
 }
 .form-button{
-    border-radius: 1px solid #2D25A0;
-    background-color: #392fc9;
+    border-radius: 1px solid red;
+    background-color: red;
     color: #FFFFFF;
 }
 
