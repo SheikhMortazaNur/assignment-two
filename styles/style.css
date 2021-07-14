@@ -54,7 +54,41 @@ nav{ display: flex; justify-content: center; }
  transform: rotate(360deg);
 transition: transform 10s ;
 }
+/* 
+CONTACT BOX */
 
+.contact{
+    margin: 150px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-box{
+    padding: 60px 100px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 0px 40px rgb(0 0 0 /50%);
+}
+.contact-img img{
+    width: 300px;
+    height: 250px;
+}
+.form-title{
+    font-size: 22px;
+    margin: 0 0 5px 5px;
+}
+.form-bar{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 300px;
+}
+.form-button{
+    border-radius: 1px solid #2D25A0;
+    background-color: #392fc9;
+    color: #FFFFFF;
+}
 
 /* FOOTER */
 
@@ -91,53 +125,54 @@ transition: transform 10s ;
 /* mobile device  */
 
 @media only screen and (max-width:688px) {
-    header{
-        width: 100%;
-    }
-    .navbar{
-        width: 100%;
-        justify-content: flex-end;
-    
-    }
-    .nav-links{
-        display: none;
-    }
-
-    .header{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-around;
-       align-items: center;
-       margin: unset;
-       padding: unset;}
-    .header-text{
-        width: 180px;
-        height: 300px;
-    }
-    .header-font{
-        font-size: 28px;
-    }
-
-    .header-img img{
-       width: 200px;
-       height: auto;
-       margin: 0 0 60px 0;}
-    
-    .buttons{
-           padding: 10px;
-           font-size: 11px;
-       }
 
     
-       .players-grid{
-           width: 100%;
+    
+
+    
+    
+     .anime, .header, .nav-links, .header-text, .header-img{ flex-direction: column;}
+
+     
+     /* HEADER */
+      .details{padding-bottom: 15px; font-size: 30px;}
+      .ticket{padding-top: 25px; padding-left: 35px;}
+      .header-font{font-size: 45px; padding-left: 50px; padding-right: 5px;}
+      .header-button{padding-left: 50px;}
+
+      /* HEADER IMAGE */
+      .header-img {  width: 250px;
+        height: 270px;  }
+      .header-img img{width: 265px;
+        height: auto;
+        margin: 0 0 60px 0;}
+
+      /* PLAYERS */
+
+      .players{width: 100%;}
+       .players-grid, .anime{
            grid-template-columns: repeat(1,1fr);
-           justify-content: center;
+            align-items: center;
        }
-    
-    
 
-       .header, .anime {display: none;}
+       /* CONTACT BOX */
+       .contact{
+        width: 100%;
+    }
+    .contact-box{
+        width: 290px;
+        flex-direction: column;
+    }
+    .contact-img img{
+        width: 210px;
+        height: 200px;}
+
+      /* FOOTER */
+      .footer-logo-img{ width: 80%;}
+      .pic{width: 100%;}
+
+   
+    }
        
 
      
